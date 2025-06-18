@@ -401,31 +401,6 @@ body {
       z-index: 1;
       font-weight:bold;
     }
-
-    .gradient-button::before {
-      content: "";
-      position: absolute;
-      inset: -1px
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 0.6s ease;
-    }
-
-    .gradient-button:hover {
-       -webkit-mask-image: text;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-      -webkit-mask-size: contain;
-      color: transparent;
-      background-clip: text;
-      box-shadow: 0 0 128px #ff00ff;
-      animation: animatedBorder 2s ease-in-out infinite;
-    }
-
-    .gradient-button:hover::before {
-      opacity: 1;
-    }
-
       .go-btn {
       padding: 8px 16px;
       color: white;
